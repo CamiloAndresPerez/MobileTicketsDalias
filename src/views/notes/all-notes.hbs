@@ -1,0 +1,28 @@
+<div class="container-all">
+  {{#each notes}}
+  <div>
+    <div class="tikect">
+
+      <h1>
+        {{ title }} <a href="/notes/edit/{{_id}}">
+          <i class="fas fa-edit"></i></a>
+      </h1>
+      <p class="contenido">{{ description }} </p>
+      <p class="">{{ createdAt }} </p>
+      <!-- BOTON DE ELIMINACIÓN -->
+      <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+        <input type="hidden" name="_method" value="DELETE">
+        <button type="submit" class="btn">Delete</button>
+      </form>
+
+    </div>
+  </div>
+  {{else}}
+  <div class="tikect">
+
+    <h1>Hola {{ user.name }}</h1>
+    <p class="lead">No tienes ningun ticket todavia.</p>
+    <a href="/notes/add" class="btns">¡Crear!</a>
+  </div>
+  {{/each}}
+</div>

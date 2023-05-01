@@ -1,0 +1,1340 @@
+<div class="container_notas">
+
+  <div class="techo">
+
+    <img class="rounded-circle mx-auto logo m-3" src="/img/dalias.png" alt="Logo" />
+  </div>
+  <div class="tomar">
+    <div class="">
+      <h1>Nuevo pedido</h1>
+    </div>
+    <div class="">
+      <form action="/notes/new-note" method="POST">
+        <div>
+          <label for="title">Titulo:</label>
+          <input id="1" type="text" name="title" class="form-control" placeholder="Title" />
+        </div>
+        <div class="">
+          <label for="description">Descripción:</label>
+          <textarea id="2" name="description" class="form-control" placeholder="Description"></textarea>
+        </div>
+        <button class="btn" type="submit">
+          Guardar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="">
+  <div class="mesas">
+    <div class="">
+      <h1>Selecciona una Mesa</h1>
+      <div class="card-body">
+        <button id="Button1" type="button" class="btn btn-primary">Mesa 1</button>
+        <button id="Button2" type="button" class="btn btn-primary">Mesa 2</button>
+        <button id="Button3" type="button" class="btn btn-primary">Mesa 3</button>
+        <button id="Button4" type="button" class="btn btn-primary">Mesa 4</button>
+        <button id="Button5" type="button" class="btn btn-primary">Mesa 5</button>
+        <button id="Button6" type="button" class="btn btn-primary">Mesa 6</button>
+        <button id="Button7" type="button" class="btn btn-primary">Mesa 7</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="productos">
+
+  <h1>Combos Desayunos</h1>
+  <div class="">
+    <button id="combo1" type="button" class="btn btn-primary">Andino</button>
+    <button id="combo2" type="button" class="btn btn-primary">Boyacense</button>
+    <button id="combo3" type="button" class="btn btn-primary">Campestre</button>
+    <button id="combo4" type="button" class="btn btn-primary">Americano</button>
+    <button id="combo5" type="button" class="btn btn-primary">Cereal de cabaña</button>
+    <button id="combo6" type="button" class="btn btn-primary">Santafereño</button>
+    <button id="combo7" type="button" class="btn btn-primary">Rolo</button>
+    <button id="combo8" type="button" class="btn btn-primary">Bistec</button>
+    <button id="combo9" type="button" class="btn btn-primary">Granja</button>
+  </div>
+
+
+</div>
+
+<!--Combo Americano-->
+<div class="contenedor_agregar">
+  <div id="ventana-emergenteAmericano" class="oculto">
+    <p>¿Que acción deseas realizar?</p>
+    <p>Bebida 1</p>
+    <button id="boton-38" class="opcion">Chocolate</button>
+    <button id="boton-39" class="opcion">Cafe</button>
+    <button id="boton-40" class="opcion">Tinto</button>
+    <button id="boton-41" class="opcion">Jugo naranja</button>
+    <hr class="" />
+    <p>Bebida 2</p>
+
+    <hr class="" / />
+    <br>
+    <button id="boton-guardarAmericano" class="boton">Guardar</button>
+    <button id="boton-cancelarAmericano" class="botonCancelar">Cancelar</button>
+  </div>
+
+
+
+</div>
+
+<!--Combo Campestre-->
+<div class="contenedor_agregar">
+  <div id="ventana-emergenteCampestre" class="oculto">
+    <p>¿Que acción deseas realizar?</p>
+    <p>Bebida</p>
+    <button id="boton-24" class="btn">Chocolate</button>
+    <button id="boton-25" class="btn">Cafe</button>
+    <button id="boton-26" class="btn">Tinto</button>
+    <button id="boton-27" class="btn">Jugo naranja</button>
+    <hr class="" />
+    <p>Huevos</p>
+    <button id="boton-28" class="btn">H. Fritos</button>
+    <button id="boton-29" class="btn">H. Pericos</button>
+    <button id="boton-30" class="btn">H. Revueltos</button>
+
+
+
+    <p>Pan</p>
+    <button id="boton-22" class="btn">Hojaldrado</button>
+    <button id="boton-23" class="btn">Frances</button>
+
+    <br>
+    <hr class="" / />
+    <br>
+    <button id="boton-guardarCampestre" class="boton">Guardar</button>
+    <button id="boton-cancelarCampestre" class="botonCancelar">Cancelar</button>
+  </div>
+
+
+
+</div>
+
+
+<!--Combo Andino-->
+<div class="contenedor_agregar">
+  <div id="ventana-emergenteAndino" class="oculto">
+    <p>¿Que acción deseas realizar?</p>
+    <p>Bebida</p>
+    <button id="boton-11" class="btn">Chocolate</button>
+    <button id="boton-2" class="btn">Cafe</button>
+    <button id="boton-3" class="btn">Tinto</button>
+    <button id="boton-4" class="btn">Jugo naranja</button>
+    <hr class="" />
+    <p>Huevos</p>
+    <button id="boton-6" class="btn">H. Fritos</button>
+    <button id="boton-7" class="btn">H. Pericos</button>
+    <button id="boton-8" class="btn">H. Revueltos</button>
+
+
+
+    <p>Porcion de fruta</p>
+    <button id="boton-20" class="btn ">Papaya y banano </button>
+    <button id="boton-21" class="btn ">Solo Papaya</button>
+    <button id="boton-19" class="btn ">Solo Banano</button>
+    <br>
+    <hr class="" / />
+    <br>
+    <button id="boton-guardarAndino" class="boton">Guardar</button>
+    <button id="boton-cancelarAndino" class="botonCancelar">Cancelar</button>
+  </div>
+
+
+
+</div>
+<!--Combo Boyacense-->
+<div class="contenedor_agregar">
+  <div id="ventana-emergente" class="oculto">
+    <p>¿Que acción deseas realizar?</p>
+    <p>Bebida</p>
+    <button id="boton-31" class="btn">Chocolate</button>
+    <button id="boton-32" class="btn">Cafe</button>
+    <button id="boton-33" class="btn">Tinto</button>
+    <button id="boton-34" class="btn">Jugo naranja</button>
+    <hr class="" />
+    <p>Huevos</p>
+    <button id="boton-35" class="btn">H. Fritos</button>
+    <button id="boton-36" class="btn">H. Pericos</button>
+    <button id="boton-37" class="btn">H. Revueltos</button>
+
+
+
+    <p>Caldo</p>
+    <button id="boton-1" class="btn">Caldo de costilla</button>
+    <button id="boton-13" class="btn">Caldo de pescado</button>
+    <br>
+    <hr class="" / />
+    <br>
+    <button id="boton-guardar" class="boton">Guardar</button>
+    <button id="boton-cancelar" class="botonCancelar">Cancelar</button>
+  </div>
+
+
+  <div id="ventana-emergente1" class="oculto">
+    <p>¿Que accion quieres realizar?</p>
+    <button id="boton-5" class="btn ">H. Duros</button>
+    <button id="boton-9" class="btn">H. Blanditos</button>
+    <hr class="" />
+    <button id="boton-12" class="boton1">Cancelar</button>
+  </div>
+
+
+  <div id="ventana-emergenteTinto" class="oculto">
+    <p>¿Que accion quieres realizar?</p>
+    <button id="boton-16" class="btn ">Doble</button>
+    <button id="boton-17" class="btn">Normal</button>
+    <hr class="" />
+    <button id="boton-18" class="boton1">Cancelar</button>
+
+  </div>
+
+</div>
+<script>
+  const ventanaEmergenteTinto = document.getElementById("ventana-emergenteTinto");
+  const ventanaEmergente = document.getElementById("ventana-emergente");
+  const ventanaEmergenteAndino = document.getElementById("ventana-emergenteAndino");
+  const ventanaEmergente1 = document.getElementById("ventana-emergente1");
+  const boton1 = document.getElementById("boton-1");
+  const boton2 = document.getElementById("boton-2");
+  const boton3 = document.getElementById("boton-3");
+  const boton4 = document.getElementById("boton-4");
+  const boton5 = document.getElementById("boton-5");
+  const boton6 = document.getElementById("boton-6");
+  const boton7 = document.getElementById("boton-7");
+  const boton8 = document.getElementById("boton-8");
+  const boton9 = document.getElementById("boton-9");
+  const boton10 = document.getElementById("boton-10");
+  const boton11 = document.getElementById("boton-11");
+  const boton12 = document.getElementById("boton-12");
+  const boton13 = document.getElementById("boton-13");
+  const boton16 = document.getElementById("boton-16");
+  const boton17 = document.getElementById("boton-17");
+  const boton18 = document.getElementById("boton-18");
+  //Americano
+  const ventanaEmergenteAmericano = document.getElementById("ventana-emergenteAmericano");
+  const botonguardarAmericano = document.getElementById("boton-guardarAmericano");
+  const botongcancelarAmericano = document.getElementById("boton-cancelarAmericano");
+  const boton38 = document.getElementById("boton-38");
+  const boton39 = document.getElementById("boton-39");
+  const boton40 = document.getElementById("boton-40");
+  const boton41 = document.getElementById("boton-41");
+
+  //Americano
+  botonguardarAmericano.addEventListener("click", guardarAmericano);
+  botongcancelarAmericano.addEventListener("click", cancelarAmericano);
+
+
+  //Boyacense 
+  const boton31 = document.getElementById("boton-31");
+  const boton32 = document.getElementById("boton-32");
+  const boton33 = document.getElementById("boton-33");
+  const boton34 = document.getElementById("boton-34");
+  const boton35 = document.getElementById("boton-35");
+  const boton36 = document.getElementById("boton-36");
+  const boton37 = document.getElementById("boton-37");
+
+  //Boyacense 
+  boton31.addEventListener("click", agregarChocolateB);
+  boton32.addEventListener("click", agregarCafeB);
+  boton33.addEventListener("click", agregarTintoB);
+  boton34.addEventListener("click", agregarJugoNaranjaB);
+  boton35.addEventListener("click", agregarHFritosB);
+  boton36.addEventListener("click", agregarHPericosB);
+  boton37.addEventListener("click", agregarHRevueltosB);
+
+  const botonGuardar = document.getElementById("boton-guardar");
+  const botonCancelar = document.getElementById("boton-cancelar");
+  const botonGuardarAndino = document.getElementById("boton-guardarAndino");
+  const botonCancelarAndino = document.getElementById("boton-cancelarAndino");
+  //Campestre
+  const boton24 = document.getElementById("boton-24");
+  const boton25 = document.getElementById("boton-25");
+  const boton26 = document.getElementById("boton-26");
+  const boton27 = document.getElementById("boton-27");
+  const boton28 = document.getElementById("boton-28");
+  const boton29 = document.getElementById("boton-29");
+  const boton30 = document.getElementById("boton-30");
+  const ventanaEmergenteCampestre = document.getElementById("ventana-emergenteCampestre");
+  const boton22 = document.getElementById("boton-22");
+  const boton23 = document.getElementById("boton-23");
+  const botonguardarCampestre = document.getElementById("boton-guardarCampestre");
+  const botongcancelarCampestre = document.getElementById("boton-cancelarCampestre");
+  //Campestre
+  boton24.addEventListener("click", agregarChocolateC);
+  boton25.addEventListener("click", agregarCafeC);
+  boton26.addEventListener("click", agregarTintoC);
+  boton27.addEventListener("click", agregarJugoNaranjaC);
+  boton28.addEventListener("click", agregarHFritosC);
+  boton29.addEventListener("click", agregarHPericosC);
+  boton30.addEventListener("click", agregarHRevueltosC);
+  boton22.addEventListener("click", agregarPanHojaldrado);
+  boton23.addEventListener("click", agregarPanFrances);
+  botonguardarCampestre.addEventListener("click", guardarCampestre);
+  botongcancelarCampestre.addEventListener("click", cancelarCampestre);
+
+
+  //Andino
+  const boton19 = document.getElementById("boton-19");
+  const boton20 = document.getElementById("boton-20");
+  const boton21 = document.getElementById("boton-21");
+  boton19.addEventListener("click", agregarSoloBanano);
+  boton20.addEventListener("click", agregarPapayaBanano);
+  boton21.addEventListener("click", agregarSoloPapaya);
+
+  boton13.addEventListener("click", agregarCaldoCostilla);
+  botonGuardar.addEventListener("click", accionBoton1);
+  botonCancelar.addEventListener("click", accionBoton3);
+  botonGuardarAndino.addEventListener("click", accionBoton1);
+  botonCancelarAndino.addEventListener("click", accionBoton3);
+  boton1.addEventListener("click", agregarMensaje);
+  boton2.addEventListener("click", agregarCafe);
+  boton3.addEventListener("click", agregarTinto);
+  boton4.addEventListener("click", agregarJugoNaranja);
+  boton5.addEventListener("click", agregarHDuros);
+  boton6.addEventListener("click", agregarHFritos);
+  boton7.addEventListener("click", agregarHPericos);
+  boton8.addEventListener("click", agregarHRevueltos);
+  boton9.addEventListener("click", agregarHBlanditos);
+  boton12.addEventListener("click", eliminarHuevosFritos)
+  boton11.addEventListener("click", agregarChocolate);
+  boton16.addEventListener("click", agregarDoble);
+  boton17.addEventListener("click", agregarNormal);
+  boton18.addEventListener("click", eliminarTinto);
+
+  //Americano
+
+  function mostrarVentanaEmergenteAmericano() {
+    ventanaEmergenteAmericano.classList.remove("oculto");
+  }
+
+  function guardarAmericano() {
+    ventanaEmergenteAmericano.classList.add("oculto");
+  }
+
+  function cancelarAmericano() {
+    mensajeInput.value = "";
+
+    ventanaEmergenteAmericano.classList.add("oculto");
+
+  }
+  //Americano
+
+  function agregarChocolateA() {
+    var msj = " \n -Chocolate"
+    if (mensajeInput.value.endsWith(msj)) {
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+
+  }
+
+  function agregarCafeA() {
+
+    if (mensajeInput.value.endsWith(" \n -Cafe.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -8);
+    } else {
+      mensajeInput.value += " \n -Cafe.";
+    }
+  }
+
+  function agregarJugoNaranjaA() {
+    var msj = " \n -Jugo de Naranja."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+  }
+
+  function agregarTintoA() {
+
+    if (mensajeInput.value.endsWith(" \n -Tinto.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -9);
+    } else {
+      mensajeInput.value += " \n -Tinto.";
+    }
+    mostrarVentanaEmergenteTinto();
+  }
+
+
+  //Bebidas Americano
+  
+  function bebidasAmericano() {
+    alert("Hola bebida" );
+    
+    
+    let seleccionados = [];
+    const opciones = document.querySelectorAll('.opcion');
+    
+    alert("dentro de bebidas lenght es "+seleccionados.length);
+    opciones.forEach((opcion, indice) => {
+      opcion.addEventListener('click', () => {
+        if (seleccionados.length < 2) {
+          if (!seleccionados.includes(opcion.id)) {
+            opcion.classList.add('seleccionado');
+            seleccionados.push(opcion.id);
+            if (indice == 0) {
+              agregarChocolateA();
+            } else if (indice == 1) {
+              agregarCafeA();
+
+            } else if (indice == 3) {
+              agregarJugoNaranjaA();
+            } else if (indice == 2) {
+              agregarTintoA();
+            }
+          } else {
+            opcion.classList.remove('seleccionado');
+            seleccionados = seleccionados.filter((id) => id !== opcion.id);
+          }
+        }
+        if (seleccionados.length === 2) {
+          opciones.forEach((opcion) => {
+            if (!seleccionados.includes(opcion.id)) {
+              opcion.setAttribute('disabled', true);
+            }
+          });
+        } else {
+          opciones.forEach((opcion) => {
+            opcion.removeAttribute('disabled');
+          });
+        }
+      });
+    });
+
+
+  }
+
+  function enableBebidasAmericano(){
+    boton38.disabled=false;
+    boton39.disabled=false;
+    boton40.disabled=false;
+    boton41.disabled=false;
+    const borrarSeleccionado = document.querySelectorAll('.seleccionado');
+    borrarSeleccionado.forEach((loka) =>{
+      loka.classList.remove('seleccionado');
+    })
+    
+  }
+
+
+  //Combo Campestre
+
+
+
+  function mostrarVentanaEmergenteCampes() {
+    ventanaEmergenteCampestre.classList.remove("oculto");
+
+  }
+
+  function guardarCampestre() {
+    ventanaEmergenteCampestre.classList.add("oculto");
+
+  }
+
+
+  function cancelarCampestre() {
+    mensajeInput.value = "";
+
+    ventanaEmergenteCampestre.classList.add("oculto");
+
+  }
+
+
+
+
+  function enablePanFrances() {
+    boton22.disabled = false;
+
+  }
+
+  function disablePanFrances() {
+    boton22.disabled = true;
+
+  }
+
+
+  function agregarPanFrances() {
+
+    var msj = " \n -Pan Frances."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton23.style.backgroundColor === 'darkgreen') {
+      boton23.style.backgroundColor = '#342315';
+      enablePanFrances();
+    } else {
+      boton23.style.backgroundColor = 'darkgreen';
+      disablePanFrances();
+    }
+
+  }
+
+  function enablePanHojaldrado() {
+    boton23.disabled = false;
+
+  }
+
+  function disablePanHojaldrado() {
+    boton23.disabled = true;
+
+  }
+
+  function agregarPanHojaldrado() {
+
+    var msj = " \n -Pan Hojaldrado."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton22.style.backgroundColor === 'darkgreen') {
+      boton22.style.backgroundColor = '#342315';
+      enablePanHojaldrado();
+    } else {
+      boton22.style.backgroundColor = 'darkgreen';
+      disablePanHojaldrado();
+    }
+
+  }
+  // Combo Andino 
+  function mostrarVentanaEmergenteAndino() {
+    ventanaEmergenteAndino.classList.remove("oculto");
+  }
+
+  function enablePapayaBanano() {
+    boton21.disabled = false;
+    boton19.disabled = false;
+  }
+
+  function disablePapayaBanano() {
+    boton21.disabled = true;
+    boton19.disabled = true;
+  }
+
+  function agregarPapayaBanano() {
+
+    var msj = " \n -Papaya y banano."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton20.style.backgroundColor === 'darkgreen') {
+      boton20.style.backgroundColor = '#342315';
+      enablePapayaBanano();
+    } else {
+      boton20.style.backgroundColor = 'darkgreen';
+      disablePapayaBanano();
+    }
+
+  }
+
+
+  function enableSoloBanano() {
+    boton20.disabled = false;
+    boton21.disabled = false;
+  }
+
+  function disableSoloBanano() {
+    boton20.disabled = true;
+    boton21.disabled = true;
+  }
+
+  function agregarSoloBanano() {
+
+    var msj = " \n -Solo banano."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton19.style.backgroundColor === 'darkgreen') {
+      boton19.style.backgroundColor = '#342315';
+      enableSoloBanano();
+    } else {
+      boton19.style.backgroundColor = 'darkgreen';
+      disableSoloBanano();
+    }
+
+  }
+
+  function enableSoloPapaya() {
+    boton20.disabled = false;
+    boton19.disabled = false;
+  }
+  function disableSoloPapaya() {
+    boton20.disabled = true;
+    boton19.disabled = true;
+  }
+
+  function agregarSoloPapaya() {
+
+    var msj = " \n -Solo papaya."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+
+    }
+    if (boton21.style.backgroundColor === 'darkgreen') {
+      boton21.style.backgroundColor = '#342315';
+      enableSoloPapaya();
+    } else {
+      boton21.style.backgroundColor = 'darkgreen';
+      disableSoloPapaya();
+    }
+
+  }
+
+
+
+
+  //Combo Boyacense
+
+  function enableEverything() {
+
+    enableDrinksChocolate();
+    enableDrinksOutNaranja();
+    enableDrinksTinto();
+    enabledDrinksCafe();
+    enableEggsFritos();
+    enableEggsPericos();
+    enableEggsRevueltos();
+    enablePanFrances();
+    enablePanHojaldrado();
+
+
+  }
+  //Andino
+  function eliminarTinto() {
+    var msj = " \n -Tinto."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    }
+
+    ventanaEmergenteTinto.classList.add("oculto");
+    boton3.style.backgroundColor = '#342315';
+    boton26.style.backgroundColor = '#342315';
+    enableDrinksTinto();
+
+  }
+
+
+  function eliminarHuevosFritos() {
+
+    var msj = " \n -H. Fritos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    }
+
+    ventanaEmergente1.classList.add("oculto");
+    boton6.style.backgroundColor = '#342315';
+
+
+  }
+  function agregarNormal() {
+    var msj = " \n -Normal."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+
+    }
+    ventanaEmergenteTinto.classList.add("oculto");
+
+  }
+
+
+  function agregarDoble() {
+
+
+    var msj = " \n -Doble."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+
+    }
+    ventanaEmergenteTinto.classList.add("oculto");
+
+  }
+
+  function disableDrinksChocolate() {
+    boton2.disabled = true;
+    boton3.disabled = true;
+    boton4.disabled = true;
+  }
+
+  function enableDrinksChocolate() {
+    boton2.disabled = false;
+    boton3.disabled = false;
+    boton4.disabled = false;
+  }
+  //Andino
+  function agregarChocolate() {
+    var msj = " \n -Chocolate"
+    if (mensajeInput.value.endsWith(msj)) {
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton11.style.backgroundColor === 'darkgreen') {
+      boton11.style.backgroundColor = '#342315';
+      enableDrinksChocolate();
+    } else {
+      boton11.style.backgroundColor = 'darkgreen';
+      disableDrinksChocolate();
+    }
+  }
+
+
+  //Boyacense
+
+  function agregarChocolateB() {
+    var msj = " \n -Chocolate"
+    if (mensajeInput.value.endsWith(msj)) {
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton31.style.backgroundColor === 'darkgreen') {
+      boton31.style.backgroundColor = '#342315';
+      boton32.disabled = false;
+      boton33.disabled = false;
+      boton34.disabled = false;
+    } else {
+      boton31.style.backgroundColor = 'darkgreen';
+      boton32.disabled = true;
+      boton33.disabled = true;
+      boton34.disabled = true;
+    }
+  }
+
+  //campestre
+
+  function agregarChocolateC() {
+    var msj = " \n -Chocolate"
+    if (mensajeInput.value.endsWith(msj)) {
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton24.style.backgroundColor === 'darkgreen') {
+      boton24.style.backgroundColor = '#342315';
+      boton25.disabled = false;
+      boton26.disabled = false;
+      boton27.disabled = false;
+    } else {
+      boton24.style.backgroundColor = 'darkgreen';
+      boton25.disabled = true;
+      boton26.disabled = true;
+      boton27.disabled = true;
+    }
+  }
+
+
+
+  var mensajeInput = document.getElementById("2");
+  function agregarCaldoCostilla() {
+    if (boton13.style.backgroundColor === 'darkgreen') {
+      boton13.style.backgroundColor = '#342315';
+    } else {
+      boton13.style.backgroundColor = 'darkgreen';
+    }
+    var msj = " \n -Caldo de Pescado."
+    if (mensajeInput.value.endsWith(msj)) {
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+  }
+
+
+  function accionBoton3() {
+
+    mensajeInput.value = "";
+    ventanaEmergente.classList.add("oculto");
+    ventanaEmergenteAndino.classList.add("oculto");
+  }
+
+  function disableEggsFritos() {
+    boton7.disabled = true;
+    boton8.disabled = true;
+  }
+  function enableEggsFritos() {
+    boton7.disabled = false;
+    boton8.disabled = false;
+    boton29.disabled = false;
+    boton30.disabled = false;
+  }
+
+  function agregarHBlanditos() {
+
+    var msj = " \n -H. Blanditos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+
+    }
+    ventanaEmergente1.classList.add("oculto");
+    disableEggsFritos();
+    boton6.style.backgroundColor = "darkgreen";
+
+  }
+
+  function enableEggsRevueltos() {
+
+    boton6.disabled = false;
+    boton7.disabled = false;
+  }
+  function disableEggsRevueltos() {
+
+    boton6.disabled = true;
+    boton7.disabled = true;
+
+
+  }
+
+  //Boyacense
+
+  function agregarHRevueltosB() {
+
+    if (boton37.style.backgroundColor === 'darkgreen') {
+      boton37.style.backgroundColor = '#342315';
+
+      boton35.disabled = false;
+      boton36.disabled = false;
+
+    } else {
+      boton37.style.backgroundColor = 'darkgreen';
+      boton35.disabled = true;
+      boton36.disabled = true;
+    }
+
+    var msj = " \n -H. Revueltos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+
+  }
+
+  //Campestre
+
+  function agregarHRevueltosC() {
+
+    if (boton30.style.backgroundColor === 'darkgreen') {
+      boton30.style.backgroundColor = '#342315';
+
+      boton28.disabled = false;
+      boton29.disabled = false;
+
+    } else {
+      boton30.style.backgroundColor = 'darkgreen';
+      boton28.disabled = true;
+      boton29.disabled = true;
+    }
+
+    var msj = " \n -H. Revueltos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+
+  }
+
+
+  //Andino
+  function agregarHRevueltos() {
+
+    if (boton8.style.backgroundColor === 'darkgreen') {
+      boton8.style.backgroundColor = '#342315';
+      enableEggsRevueltos();
+
+    } else {
+      boton8.style.backgroundColor = 'darkgreen';
+      disableEggsRevueltos();
+    }
+
+    var msj = " \n -H. Revueltos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+
+  }
+
+  function enableEggsPericos() {
+    boton6.disabled = false;
+    boton8.disabled = false;
+  }
+  function disableEggsPericos() {
+    boton6.disabled = true;
+    boton8.disabled = true;
+  }
+
+  //Boyacense
+
+  function agregarHPericosB() {
+
+    if (boton36.style.backgroundColor === 'darkgreen') {
+      boton36.style.backgroundColor = '#342315';
+
+      boton35.disabled = false;
+      boton37.disabled = false;
+    } else {
+      boton36.style.backgroundColor = 'darkgreen';
+      boton35.disabled = true;
+      boton37.disabled = true;
+    }
+
+    var msj = " \n -H. Pericos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+  }
+
+  //Campestre
+  function agregarHPericosC() {
+
+    if (boton29.style.backgroundColor === 'darkgreen') {
+      boton29.style.backgroundColor = '#342315';
+
+      boton28.disabled = false;
+      boton30.disabled = false;
+    } else {
+      boton29.style.backgroundColor = 'darkgreen';
+      boton28.disabled = true;
+      boton30.disabled = true;
+    }
+
+    var msj = " \n -H. Pericos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+  }
+
+
+  //Andino
+  function agregarHPericos() {
+
+    if (boton7.style.backgroundColor === 'darkgreen') {
+      boton7.style.backgroundColor = '#342315';
+      enableEggsPericos();
+    } else {
+      boton7.style.backgroundColor = 'darkgreen';
+      disableEggsPericos();
+    }
+
+    var msj = " \n -H. Pericos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+  }
+
+
+  //Boyacense
+
+  function agregarHFritosB() {
+    if (boton35.style.backgroundColor === 'darkgreen') {
+      boton35.style.backgroundColor = '#342315';
+      boton36.disabled = false;
+      boton37.disabled = false;
+    } else {
+      boton35.style.backgroundColor = 'darkgreen';
+      boton36.disabled = true;
+      boton37.disabled = true;
+    }
+
+    var msj = " \n -H. Fritos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+
+
+    } else {
+      mensajeInput.value += msj;
+
+      mostrarVentanaEmergente1();
+
+    }
+
+  }
+
+
+  //Campestre 
+  function agregarHFritosC() {
+    if (boton28.style.backgroundColor === 'darkgreen') {
+      boton28.style.backgroundColor = '#342315';
+      boton29.disabled = false;
+      boton30.disabled = false;
+    } else {
+      boton28.style.backgroundColor = 'darkgreen';
+      boton29.disabled = true;
+      boton30.disabled = true;
+    }
+
+    var msj = " \n -H. Fritos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+
+
+    } else {
+      mensajeInput.value += msj;
+
+      mostrarVentanaEmergente1();
+
+    }
+
+  }
+  // Andino
+  function agregarHFritos() {
+    if (boton6.style.backgroundColor === 'darkgreen') {
+      boton6.style.backgroundColor = '#342315';
+    } else {
+      boton6.style.backgroundColor = 'darkgreen';
+    }
+
+    var msj = " \n -H. Fritos."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+
+
+    } else {
+      mensajeInput.value += msj;
+      enableEggsFritos();
+      mostrarVentanaEmergente1();
+
+    }
+
+  }
+
+  function agregarHDuros() {
+
+    var msj = " \n -H. Duros."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+      disableEggsFritos();
+    }
+    ventanaEmergente1.classList.add("oculto");
+    boton6.style.backgroundColor = "darkgreen";
+  }
+
+  function disableDrinksOutNaranja() {
+    boton11.disabled = true;
+    boton2.disabled = true;
+    boton3.disabled = true;
+
+  }
+  function enableDrinksOutNaranja() {
+    boton11.disabled = false;
+    boton2.disabled = false;
+    boton3.disabled = false;
+
+  }
+  //Andino
+  function agregarJugoNaranja() {
+    if (boton4.style.backgroundColor === 'darkgreen') {
+      boton4.style.backgroundColor = '#342315';
+      enableDrinksOutNaranja();
+
+    } else {
+      boton4.style.backgroundColor = 'darkgreen';
+      disableDrinksOutNaranja();
+    }
+
+    var msj = " \n -Jugo de Naranja."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+  }
+  //Boyacense
+
+  function agregarJugoNaranjaB() {
+    if (boton34.style.backgroundColor === 'darkgreen') {
+      boton34.style.backgroundColor = '#342315';
+
+      boton31.disabled = false;
+      boton32.disabled = false;
+      boton33.disabled = false;
+
+    } else {
+      boton34.style.backgroundColor = 'darkgreen';
+
+      boton31.disabled = true;
+      boton32.disabled = true;
+      boton33.disabled = true;
+    }
+
+    var msj = " \n -Jugo de Naranja."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+  }
+
+
+  //Campestre
+  function agregarJugoNaranjaC() {
+    if (boton27.style.backgroundColor === 'darkgreen') {
+      boton27.style.backgroundColor = '#342315';
+
+      boton24.disabled = false;
+      boton25.disabled = false;
+      boton26.disabled = false;
+
+    } else {
+      boton27.style.backgroundColor = 'darkgreen';
+
+      boton24.disabled = true;
+      boton25.disabled = true;
+      boton26.disabled = true;
+    }
+
+    var msj = " \n -Jugo de Naranja."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+  }
+
+  function enableDrinksTinto() {
+    boton11.disabled = false;
+    boton2.disabled = false;
+    boton4.disabled = false;
+    boton24.disabled = false;
+    boton25.disabled = false;
+    boton27.disabled = false;
+  }
+  function disableDrinksTinto() {
+    boton11.disabled = true;
+    boton2.disabled = true;
+    boton4.disabled = true;
+  }
+  //Andino
+  function agregarTinto() {
+    if (boton3.style.backgroundColor === 'darkgreen') {
+      boton3.style.backgroundColor = '#342315';
+      enableDrinksTinto();
+    } else {
+      boton3.style.backgroundColor = 'darkgreen';
+      disableDrinksTinto();
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Tinto.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -9);
+    } else {
+      mensajeInput.value += " \n -Tinto.";
+    }
+    mostrarVentanaEmergenteTinto();
+  }
+  //Boyacense
+
+  function agregarTintoB() {
+    if (boton33.style.backgroundColor === 'darkgreen') {
+      boton33.style.backgroundColor = '#342315';
+
+      boton31.disabled = false;
+      boton32.disabled = false;
+      boton34.disabled = false;
+    } else {
+      boton33.style.backgroundColor = 'darkgreen';
+
+      boton31.disabled = true;
+      boton32.disabled = true;
+      boton34.disabled = true;
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Tinto.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -9);
+    } else {
+      mensajeInput.value += " \n -Tinto.";
+    }
+    mostrarVentanaEmergenteTinto();
+  }
+
+
+
+  // Campestre
+  function agregarTintoC() {
+    if (boton26.style.backgroundColor === 'darkgreen') {
+      boton26.style.backgroundColor = '#342315';
+
+      boton24.disabled = false;
+      boton25.disabled = false;
+      boton27.disabled = false;
+    } else {
+      boton26.style.backgroundColor = 'darkgreen';
+
+      boton24.disabled = true;
+      boton25.disabled = true;
+      boton27.disabled = true;
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Tinto.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -9);
+    } else {
+      mensajeInput.value += " \n -Tinto.";
+    }
+    mostrarVentanaEmergenteTinto();
+  }
+
+  function disabledDrinksCafe() {
+    boton11.disabled = true;
+    boton3.disabled = true;
+    boton4.disabled = true;
+  }
+  function enabledDrinksCafe() {
+    boton11.disabled = false;
+    boton3.disabled = false;
+    boton4.disabled = false;
+  }
+  // Andino
+  function agregarCafe() {
+    if (boton2.style.backgroundColor === 'darkgreen') {
+      boton2.style.backgroundColor = '#342315';
+      enabledDrinksCafe();
+    } else {
+      boton2.style.backgroundColor = 'darkgreen';
+      disabledDrinksCafe();
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Cafe.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -8);
+    } else {
+      mensajeInput.value += " \n -Cafe.";
+    }
+  }
+  //Boyacense
+
+  function agregarCafeB() {
+    if (boton32.style.backgroundColor === 'darkgreen') {
+      boton32.style.backgroundColor = '#342315';
+      boton31.disabled = false;
+      boton33.disabled = false;
+      boton34.disabled = false;
+    } else {
+      boton32.style.backgroundColor = 'darkgreen';
+      boton31.disabled = true;
+      boton33.disabled = true;
+      boton34.disabled = true;
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Cafe.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -8);
+    } else {
+      mensajeInput.value += " \n -Cafe.";
+    }
+  }
+
+
+
+  //Campestre
+  function agregarCafeC() {
+    if (boton25.style.backgroundColor === 'darkgreen') {
+      boton25.style.backgroundColor = '#342315';
+      boton24.disabled = false;
+      boton26.disabled = false;
+      boton27.disabled = false;
+    } else {
+      boton25.style.backgroundColor = 'darkgreen';
+      boton24.disabled = true;
+      boton26.disabled = true;
+      boton27.disabled = true;
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Cafe.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -8);
+    } else {
+      mensajeInput.value += " \n -Cafe.";
+    }
+  }
+
+  function mostrarVentanaEmergente1() {
+    ventanaEmergente1.classList.remove("oculto");
+  }
+  function mostrarVentanaEmergenteTinto() {
+    ventanaEmergenteTinto.classList.remove("oculto");
+  }
+  function agregarMensaje() {
+
+    if (boton1.style.backgroundColor === 'darkgreen') {
+      boton1.style.backgroundColor = '#342315';
+    } else {
+      boton1.style.backgroundColor = 'darkgreen';
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Caldo de Costilla.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -22);
+    } else {
+      mensajeInput.value += " \n -Caldo de Costilla.";
+    }
+  }
+
+
+  function accionBoton1() {
+
+    ventanaEmergente.classList.add("oculto");
+    ventanaEmergenteAndino.classList.add("oculto");
+  }
+
+  function accionBoton2() {
+
+    mensajeInput.value = mensajeInput.value.slice(0, -14);
+    ventanaEmergente1.classList.add("oculto");
+
+
+
+  }
+
+</script>

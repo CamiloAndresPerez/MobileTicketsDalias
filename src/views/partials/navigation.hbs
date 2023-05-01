@@ -1,0 +1,58 @@
+
+  <div class="container__header">
+    <div class="titulo">
+      <a href="/">App Tickets</a>
+    {{!--   <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button> --}}
+    </div>
+    <div id="icon-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="menu" id="show-menu">
+      <nav>
+          <ul>
+            <li>
+            <a class="nav-link" href="/about">Acerca de</a>
+            </li>
+          
+          {{#if user}}
+            <li class="desplegable">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Notes
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/notes">All Notes</a>
+                <a class="dropdown-item" href="/notes/add">Add A Note</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/auth/logout">Logout</a>
+              </ul>
+            </li>
+          {{else}}
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/signin">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/signup">Registrate</a>
+            </li>
+          {{/if}}
+        </ul>
+      </nav>
+    </div>
+  </div>
+

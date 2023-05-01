@@ -1,0 +1,138 @@
+// Combo Andino 
+function mostrarVentanaEmergenteAndino() {
+  ventanaEmergenteAndino.classList.remove("oculto");
+}
+
+function enablePapayaBanano(){
+  boton21.disabled=false;
+  boton19.disabled=false;
+}
+
+function disablePapayaBanano(){
+  boton21.disabled=true;
+  boton19.disabled=true;
+}
+
+function agregarPapayaBanano(){
+
+  var msj = " \n -Papaya y banano."
+  if (mensajeInput.value.endsWith(msj)) {
+
+    mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+  } else {
+    mensajeInput.value += msj;
+  }
+  if (boton20.style.backgroundColor === 'darkgreen') {
+    boton20.style.backgroundColor = '#342315';
+    enablePapayaBanano();
+  } else {
+    boton20.style.backgroundColor = 'darkgreen';
+    disablePapayaBanano();
+  }
+
+}
+
+
+function enableSoloBanano(){
+  boton20.disabled=false;
+  boton21.disabled=false;
+}
+
+function disableSoloBanano(){
+  boton20.disabled=true;
+  boton21.disabled=true;
+}
+
+function agregarSoloBanano(){
+
+  var msj = " \n -Solo banano."
+  if (mensajeInput.value.endsWith(msj)) {
+
+    mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+  } else {
+    mensajeInput.value += msj;
+  }
+  if (boton19.style.backgroundColor === 'darkgreen') {
+    boton19.style.backgroundColor = '#342315';
+    enableSoloBanano();
+  } else {
+    boton19.style.backgroundColor = 'darkgreen';
+    disableSoloBanano();
+  }
+
+}
+
+function enableSoloPapaya(){
+  boton20.disabled=false;
+  boton19.disabled=false;
+}
+function disableSoloPapaya(){
+  boton20.disabled=true;
+  boton19.disabled=true;
+}
+
+function agregarSoloPapaya(){
+
+  var msj = " \n -Solo papaya."
+  if (mensajeInput.value.endsWith(msj)) {
+
+    mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+  } else {
+    mensajeInput.value += msj;
+    
+  }
+  if (boton21.style.backgroundColor === 'darkgreen') {
+    boton21.style.backgroundColor = '#342315';
+    enableSoloPapaya();
+  } else {
+    boton21.style.backgroundColor = 'darkgreen';
+    disableSoloPapaya();
+  }
+
+}
+const ventanaEmergenteAndino = document.getElementById("ventana-emergenteAndino");
+
+const botonGuardarAndino = document.getElementById("boton-guardarAndino");
+const botonCancelarAndino = document.getElementById("boton-cancelarAndino");
+
+
+//Andino
+const boton19= document.getElementById("boton-19");
+const boton20= document.getElementById("boton-20");
+const boton21= document.getElementById("boton-21");
+boton19.addEventListener("click",agregarSoloBanano);
+boton20.addEventListener("click",agregarPapayaBanano);
+boton21.addEventListener("click",agregarSoloPapaya);
+
+
+<!--Combo Andino-->
+<div class="contenedor_agregar">
+  <div id="ventana-emergenteAndino" class="oculto">
+    <p>¿Que acción deseas realizar?</p>
+    <p>Bebida</p>
+    <button id="boton-11" class="btn">Chocolate</button>
+    <button id="boton-2" class="btn">Cafe</button>
+    <button id="boton-3" class="btn">Tinto</button>
+    <button id="boton-4" class="btn">Jugo naranja</button>
+    <hr class="" />
+    <p>Huevos</p>
+    <button id="boton-6" class="btn">H. Fritos</button>
+    <button id="boton-7" class="btn">H. Pericos</button>
+    <button id="boton-8" class="btn">H. Revueltos</button>
+
+
+
+    <p>Porcion de fruta</p>
+    <button id="boton-20" class="btn ">Papaya y banano </button>
+    <button id="boton-21" class="btn ">Solo Papaya</button>
+    <button id="boton-19" class="btn ">Solo Banano</button>
+    <br>
+    <hr class="" / />
+    <br>
+    <button id="boton-guardarAndino" class="boton">Guardar</button>
+    <button id="boton-cancelarAndino" class="botonCancelar">Cancelar</button>
+  </div>
+
+
+
+</div>

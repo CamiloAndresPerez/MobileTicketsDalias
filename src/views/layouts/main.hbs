@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicación Tickets</title>
+  <!-- BOOTSTRAP - BOOTSWATCH THEME - COSMOS -->
+  <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <header>
+    {{> navigation }}
+  </header>
+  <main class="">
+    <div class="">
+      {{> messages }}
+      {{> errors }}
+    </div>
+    
+    {{{ body }}}
+  </main>
+</body>
+<!-- Scritps -->
+
+
+<script>
+  const myButton = document.getElementById('Button1');
+  function mostrarVentanaEmergente() {
+    ventanaEmergente.classList.remove("oculto");
+  }
+
+
+
+  const myInput = document.getElementById('1');
+  const description1 = document.getElementById('2');
+
+
+  myButton.addEventListener('click', () => {
+    myInput.value = 'MESA 1';
+
+  });
+
+  const myButton2 = document.getElementById('Button2');
+
+  myButton2.addEventListener('click', () => {
+    myInput.value = 'MESA 2';
+  });
+  const myButton3 = document.getElementById('Button3');
+
+  myButton3.addEventListener('click', () => {
+    myInput.value = 'MESA 3';
+  });
+  const myButton4 = document.getElementById('Button4');
+
+  myButton4.addEventListener('click', () => {
+    myInput.value = 'MESA 4';
+  });
+
+  const myButton5 = document.getElementById('Button5');
+
+  myButton5.addEventListener('click', () => {
+    myInput.value = 'MESA 5';
+  });
+
+  const myButton6 = document.getElementById('Button6');
+
+  myButton6.addEventListener('click', () => {
+    myInput.value = 'MESA 6';
+  });
+
+  const myButton7 = document.getElementById('Button7');
+
+  myButton7.addEventListener('click', () => {
+    myInput.value = 'MESA 7';
+  });
+
+  const combo1 = document.getElementById('combo1');
+
+  combo1.addEventListener('click', () => {
+
+    if ((description1.value.match(/[a-zA-Z]/))) {
+      description1.value += "\nCOMBO ANDINO:";
+    } else {
+      description1.value = "COMBO ANDINO:";
+    }
+    mostrarVentanaEmergenteAndino();
+    enableEverything();
+
+    const botones = document.querySelectorAll('.btn')
+    botones.forEach(boton => {
+      boton.style.backgroundColor = '#342315';
+    });
+
+
+  });
+
+  const combo2 = document.getElementById('combo2');
+
+  combo2.addEventListener('click', () => {
+    if ((description1.value.match(/[a-zA-Z]/))) {
+      description1.value += "\nCOMBO BOYANCESE:"
+    } else {
+      description1.value = "COMBO BOYANCESE:"
+    }
+
+    mostrarVentanaEmergente();
+    enableEverything();
+
+    const botones = document.querySelectorAll('.btn')
+    botones.forEach(boton => {
+      boton.style.backgroundColor = '#342315';
+    });
+
+
+
+
+
+  });
+
+
+  const combo3 = document.getElementById('combo3');
+
+  combo3.addEventListener('click', () => {
+    if ((description1.value.match(/[a-zA-Z]/))) {
+      description1.value += "\nCOMBO CAMPESTRE:"
+
+    } else {
+      description1.value = "COMBO CAMPESTRE:"
+
+    }
+
+    mostrarVentanaEmergenteCampes();
+    enableEverything();
+
+    const botones = document.querySelectorAll('.btn')
+    botones.forEach(boton => {
+      boton.style.backgroundColor = '#342315';
+    });
+
+
+
+  });
+
+  const combo4 = document.getElementById('combo4');
+
+  combo4.addEventListener('click', () => {
+    if ((description1.value.match(/[a-zA-Z]/))) {
+
+      description1.value += "\nCOMBO AMERICANO:\n -H. Con jamón"
+
+    } else {
+      description1.value = "COMBO AMERICANO:\n -H. Con jamón"
+
+
+    }
+    
+    
+    enableBebidasAmericano()
+    mostrarVentanaEmergenteAmericano();
+    bebidasAmericano();
+    
+
+    
+
+    
+    
+
+
+
+
+  });
+
+  const combo5 = document.getElementById('combo5');
+
+  combo5.addEventListener('click', () => {
+
+    if ((description1.value.match(/[a-zA-Z]/))) {
+
+      description1.value += "\nCEREAL DE CABAÑA:"
+
+    } else {
+      description1.value = "CEREAL DE CABAÑA:"
+
+    }
+
+
+  });
+
+
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/script.js"></script>
+
+
+</html>
