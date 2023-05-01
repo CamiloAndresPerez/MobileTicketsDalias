@@ -8,3 +8,4 @@ CRUD Operations: create/read/update/delete Notes Allows a user to do login and s
 ![](docs/screenshot.png)
 
 cd nodejs-notes-app npm i npm run dev # run in development mode npm start # run in production mode
+Señor ayudame.
