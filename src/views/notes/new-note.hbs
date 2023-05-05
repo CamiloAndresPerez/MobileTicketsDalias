@@ -62,18 +62,19 @@
 
 
 </div>
+<!--Americano-->
 
-<!--Combo Americano-->
+
 <div class="contenedor_agregar">
   <div id="ventana-emergenteAmericano" class="oculto">
     <p>¿Que acción deseas realizar?</p>
-    <p>Bebida 1</p>
+    <p>Bebidas</p>
     <button id="boton-38" class="opcion">Chocolate</button>
     <button id="boton-39" class="opcion">Cafe</button>
     <button id="boton-40" class="opcion">Tinto</button>
     <button id="boton-41" class="opcion">Jugo naranja</button>
-    <hr class="" />
-    <p>Bebida 2</p>
+
+
 
     <hr class="" / />
     <br>
@@ -81,7 +82,72 @@
     <button id="boton-cancelarAmericano" class="botonCancelar">Cancelar</button>
   </div>
 
+</div>
+<!--Combo Rolo-->
+<div class="contenedor_agregar">
+  <div id="ventana-emergenteRolo" class="oculto">
+    <p>¿Que acción deseas realizar?</p>
+    <p>Bebida</p>
+    <button id="boton-48" class="btn">Chocolate</button>
+    <button id="boton-49" class="btn">Cafe</button>
+    <button id="boton-50" class="btn">Tinto</button>
+    <button id="boton-51" class="btn">Jugo naranja</button>
+    <hr class="" />
 
+    <p>Pan</p>
+    <button id="boton-52" class="btn">Hojaldrado</button>
+    <button id="boton-53" class="btn">Frances</button>
+
+    <br>
+    <hr class="" / />
+    <br>
+    <button id="boton-guardarRolo" class="boton">Guardar</button>
+    <button id="boton-cancelarRolo" class="botonCancelar">Cancelar</button>
+  </div>
+</div>
+
+
+<!--Combo Santafereño-->
+<div class="contenedor_agregar">
+  <div id="ventana-emergenteSantafereño" class="oculto">
+    <p>¿Que acción deseas realizar?</p>
+    <p>Bebida</p>
+    <button id="boton-42" class="btn">Chocolate</button>
+    <button id="boton-43" class="btn">Cafe</button>
+    <button id="boton-44" class="btn">Tinto</button>
+    <button id="boton-45" class="btn">Jugo naranja</button>
+    <hr class="" />
+
+    <p>Pan</p>
+    <button id="boton-46" class="btn">Hojaldrado</button>
+    <button id="boton-47" class="btn">Frances</button>
+
+    <br>
+    <hr class="" / />
+    <br>
+    <button id="boton-guardarSantafe" class="boton">Guardar</button>
+    <button id="boton-cancelarSantafe" class="botonCancelar">Cancelar</button>
+  </div>
+</div>
+
+
+<!--Combo Americano-->
+<div class="contenedor_agregar">
+  <div id="ventana-emergenteAmericano" class="oculto">
+    <p>¿Que acción deseas realizar?</p>
+    <p>Bebidas</p>
+    <button id="boton-38" class="opcion">Chocolate</button>
+    <button id="boton-39" class="opcion">Cafe</button>
+    <button id="boton-40" class="opcion">Tinto</button>
+    <button id="boton-41" class="opcion">Jugo naranja</button>
+
+
+
+    <hr class="" / />
+    <br>
+    <button id="boton-guardarAmericano" class="boton">Guardar</button>
+    <button id="boton-cancelarAmericano" class="botonCancelar">Cancelar</button>
+  </div>
 
 </div>
 
@@ -217,6 +283,50 @@
   const boton16 = document.getElementById("boton-16");
   const boton17 = document.getElementById("boton-17");
   const boton18 = document.getElementById("boton-18");
+  //1Rolo
+  const ventanaEmergenteRolo = document.getElementById("ventana-emergenteRolo");
+  const botonguardarRolo = document.getElementById("boton-guardarRolo");
+  const botongcancelarRolo = document.getElementById("boton-cancelarRolo");
+  const boton48 = document.getElementById("boton-48");
+  const boton49 = document.getElementById("boton-49");
+  const boton50 = document.getElementById("boton-50");
+  const boton51 = document.getElementById("boton-51");
+  const boton52 = document.getElementById("boton-52");
+  const boton53 = document.getElementById("boton-53");
+  botonguardarRolo.addEventListener("click", guardarRolo);
+  botongcancelarRolo.addEventListener("click", cancelarRolo);
+  boton48.addEventListener("click", agregarChocolateR);
+  boton49.addEventListener("click", agregarCafeR);
+  boton50.addEventListener("click", agregarTintoR);
+  boton51.addEventListener("click", agregarJugoNaranjaR);
+  boton52.addEventListener("click", agregarPanHojaldradoR);
+  boton53.addEventListener("click", agregarPanFrancesR);
+
+
+
+  //Santafereño
+  const ventanaEmergenteSantafe = document.getElementById("ventana-emergenteSantafereño");
+  const botonguardarSantafe = document.getElementById("boton-guardarSantafe");
+  const botongcancelarSantafe = document.getElementById("boton-cancelarSantafe");
+  const boton42 = document.getElementById("boton-42");
+  const boton43 = document.getElementById("boton-43");
+  const boton44 = document.getElementById("boton-44");
+  const boton45 = document.getElementById("boton-45");
+  const boton46 = document.getElementById("boton-46");
+  const boton47 = document.getElementById("boton-47");
+  botonguardarSantafe.addEventListener("click", guardarSantafe);
+  botongcancelarSantafe.addEventListener("click", cancelarSantafe);
+  boton42.addEventListener("click", agregarChocolateS);
+  boton43.addEventListener("click", agregarCafeS);
+  boton44.addEventListener("click", agregarTintoS);
+  boton45.addEventListener("click", agregarJugoNaranjaS);
+  boton46.addEventListener("click", agregarPanHojaldradoS);
+  boton47.addEventListener("click", agregarPanFrancesS);
+
+
+
+
+
   //Americano
   const ventanaEmergenteAmericano = document.getElementById("ventana-emergenteAmericano");
   const botonguardarAmericano = document.getElementById("boton-guardarAmericano");
@@ -225,6 +335,7 @@
   const boton39 = document.getElementById("boton-39");
   const boton40 = document.getElementById("boton-40");
   const boton41 = document.getElementById("boton-41");
+
 
   //Americano
   botonguardarAmericano.addEventListener("click", guardarAmericano);
@@ -308,6 +419,20 @@
   boton17.addEventListener("click", agregarNormal);
   boton18.addEventListener("click", eliminarTinto);
 
+
+  //Rolo
+
+  function mostrarVentanaEmergenteRolo() {
+    ventanaEmergenteRolo.classList.remove("oculto");
+  }
+
+
+  //Santafe
+
+  function mostrarVentanaEmergenteSantafe() {
+    ventanaEmergenteSantafe.classList.remove("oculto");
+  }
+
   //Americano
 
   function mostrarVentanaEmergenteAmericano() {
@@ -324,6 +449,29 @@
     ventanaEmergenteAmericano.classList.add("oculto");
 
   }
+
+  function guardarSantafe() {
+    ventanaEmergenteSantafe.classList.add("oculto");
+  }
+
+  function cancelarSantafe() {
+    mensajeInput.value = "";
+
+    ventanaEmergenteSantafe.classList.add("oculto");
+
+  }
+
+  
+  function guardarRolo() {
+    ventanaEmergenteRolo.classList.add("oculto");
+  }
+  function cancelarRolo() {
+    mensajeInput.value = "";
+    ventanaEmergenteRolo.classList.add("oculto");
+  }
+
+
+
   //Americano
 
   function agregarChocolateA() {
@@ -367,15 +515,15 @@
 
 
   //Bebidas Americano
-  
+
   function bebidasAmericano() {
-    alert("Hola bebida" );
-    
-    
+
+
+
     let seleccionados = [];
     const opciones = document.querySelectorAll('.opcion');
-    
-    alert("dentro de bebidas lenght es "+seleccionados.length);
+
+
     opciones.forEach((opcion, indice) => {
       opcion.addEventListener('click', () => {
         if (seleccionados.length < 2) {
@@ -414,16 +562,16 @@
 
   }
 
-  function enableBebidasAmericano(){
-    boton38.disabled=false;
-    boton39.disabled=false;
-    boton40.disabled=false;
-    boton41.disabled=false;
+  function enableBebidasAmericano() {
+    boton38.disabled = false;
+    boton39.disabled = false;
+    boton40.disabled = false;
+    boton41.disabled = false;
     const borrarSeleccionado = document.querySelectorAll('.seleccionado');
-    borrarSeleccionado.forEach((loka) =>{
+    borrarSeleccionado.forEach((loka) => {
       loka.classList.remove('seleccionado');
     })
-    
+
   }
 
 
@@ -454,6 +602,8 @@
 
   function enablePanFrances() {
     boton22.disabled = false;
+    boton47.disabled = false;
+    boton53.disabled = false;
 
   }
 
@@ -462,7 +612,58 @@
 
   }
 
+//Rolo
 
+  function agregarPanFrancesR() {
+
+    var msj = " \n -Pan Frances."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton53.style.backgroundColor === 'darkgreen') {
+      boton53.style.backgroundColor = '#342315';
+
+      boton52.disabled = false;
+    } else {
+      boton53.style.backgroundColor = 'darkgreen';
+
+      boton52.disabled = true;
+    }
+
+  }
+
+
+
+  //Santafe
+
+  function agregarPanFrancesS() {
+
+    var msj = " \n -Pan Frances."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton47.style.backgroundColor === 'darkgreen') {
+      boton47.style.backgroundColor = '#342315';
+
+      boton46.disabled = false;
+    } else {
+      boton47.style.backgroundColor = 'darkgreen';
+
+      boton46.disabled = true;
+    }
+
+  }
+
+
+
+
+  //Campestre
   function agregarPanFrances() {
 
     var msj = " \n -Pan Frances."
@@ -484,6 +685,8 @@
 
   function enablePanHojaldrado() {
     boton23.disabled = false;
+    boton46.disabled = false;
+    boton52.disabled = false;
 
   }
 
@@ -492,6 +695,47 @@
 
   }
 
+//Rolo
+  function agregarPanHojaldradoR() {
+
+    var msj = " \n -Pan Hojaldrado."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton52.style.backgroundColor === 'darkgreen') {
+      boton52.style.backgroundColor = '#342315';
+      boton53.disabled = false;
+    } else {
+      boton52.style.backgroundColor = 'darkgreen';
+      boton53.disabled = true;
+    }
+
+  }
+
+
+  //Santafe
+  function agregarPanHojaldradoS() {
+
+    var msj = " \n -Pan Hojaldrado."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton46.style.backgroundColor === 'darkgreen') {
+      boton46.style.backgroundColor = '#342315';
+      boton47.disabled = false;
+    } else {
+      boton46.style.backgroundColor = 'darkgreen';
+      boton47.disabled = true;
+    }
+
+  }
+  //Campestre
   function agregarPanHojaldrado() {
 
     var msj = " \n -Pan Hojaldrado."
@@ -619,6 +863,10 @@
     enableEggsRevueltos();
     enablePanFrances();
     enablePanHojaldrado();
+    enableSoloPapaya();
+    enableSoloBanano();
+    enablePapayaBanano();
+    boton13.disabled = false;
 
 
   }
@@ -633,6 +881,8 @@
     ventanaEmergenteTinto.classList.add("oculto");
     boton3.style.backgroundColor = '#342315';
     boton26.style.backgroundColor = '#342315';
+    boton44.style.backgroundColor = '#342315';
+    boton50.style.backgroundColor = '#342315';
     enableDrinksTinto();
 
   }
@@ -690,6 +940,10 @@
     boton2.disabled = false;
     boton3.disabled = false;
     boton4.disabled = false;
+    boton31.disabled = false;
+    boton42.disabled = false;
+    boton48.disabled = false;
+
   }
   //Andino
   function agregarChocolate() {
@@ -707,8 +961,51 @@
       disableDrinksChocolate();
     }
   }
+  //Rolo
+
+  function agregarChocolateR() {
+    var msj = " \n -Chocolate"
+    if (mensajeInput.value.endsWith(msj)) {
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton48.style.backgroundColor === 'darkgreen') {
+      boton48.style.backgroundColor = '#342315';
+      boton49.disabled = false;
+      boton50.disabled = false;
+      boton51.disabled = false;
+    } else {
+      boton48.style.backgroundColor = 'darkgreen';
+      boton49.disabled = true;
+      boton50.disabled = true;
+      boton51.disabled = true;
+    }
+  }
 
 
+
+  //Santafe
+
+  function agregarChocolateS() {
+    var msj = " \n -Chocolate"
+    if (mensajeInput.value.endsWith(msj)) {
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+    if (boton42.style.backgroundColor === 'darkgreen') {
+      boton42.style.backgroundColor = '#342315';
+      boton43.disabled = false;
+      boton44.disabled = false;
+      boton45.disabled = false;
+    } else {
+      boton42.style.backgroundColor = 'darkgreen';
+      boton43.disabled = true;
+      boton44.disabled = true;
+      boton45.disabled = true;
+    }
+  }
   //Boyacense
 
   function agregarChocolateB() {
@@ -759,8 +1056,10 @@
   function agregarCaldoCostilla() {
     if (boton13.style.backgroundColor === 'darkgreen') {
       boton13.style.backgroundColor = '#342315';
+      boton1.disabled = false;
     } else {
       boton13.style.backgroundColor = 'darkgreen';
+      boton1.disabled = true;
     }
     var msj = " \n -Caldo de Pescado."
     if (mensajeInput.value.endsWith(msj)) {
@@ -785,8 +1084,9 @@
   function enableEggsFritos() {
     boton7.disabled = false;
     boton8.disabled = false;
-    boton29.disabled = false;
+    boton28.disabled = false;
     boton30.disabled = false;
+    boton35.disabled = false;
   }
 
   function agregarHBlanditos() {
@@ -809,6 +1109,8 @@
 
     boton6.disabled = false;
     boton7.disabled = false;
+    boton30.disabled = false;
+    boton37.disabled = false;
   }
   function disableEggsRevueltos() {
 
@@ -896,6 +1198,8 @@
   function enableEggsPericos() {
     boton6.disabled = false;
     boton8.disabled = false;
+    boton36.disabled = false;
+    boton29.disabled = false;
   }
   function disableEggsPericos() {
     boton6.disabled = true;
@@ -1073,6 +1377,11 @@
     boton11.disabled = false;
     boton2.disabled = false;
     boton3.disabled = false;
+    boton21.disabled = false;
+    boton27.disabled = false;
+    boton34.disabled = false;
+    boton45.disabled = false;
+    boton51.disabled = false;
 
   }
   //Andino
@@ -1094,6 +1403,61 @@
       mensajeInput.value += msj;
     }
   }
+  //Rolo
+
+  function agregarJugoNaranjaR() {
+    if (boton51.style.backgroundColor === 'darkgreen') {
+      boton51.style.backgroundColor = '#342315';
+
+      boton48.disabled = false;
+      boton49.disabled = false;
+      boton50.disabled = false;
+
+    } else {
+      boton51.style.backgroundColor = 'darkgreen';
+
+      boton48.disabled = true;
+      boton49.disabled = true;
+      boton50.disabled = true;
+    }
+
+    var msj = " \n -Jugo de Naranja."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+  }
+
+
+  //Santafe
+
+  function agregarJugoNaranjaS() {
+    if (boton45.style.backgroundColor === 'darkgreen') {
+      boton45.style.backgroundColor = '#342315';
+
+      boton42.disabled = false;
+      boton43.disabled = false;
+      boton44.disabled = false;
+
+    } else {
+      boton45.style.backgroundColor = 'darkgreen';
+
+      boton42.disabled = true;
+      boton43.disabled = true;
+      boton44.disabled = true;
+    }
+
+    var msj = " \n -Jugo de Naranja."
+    if (mensajeInput.value.endsWith(msj)) {
+
+      mensajeInput.value = mensajeInput.value.slice(0, -msj.length);
+    } else {
+      mensajeInput.value += msj;
+    }
+  }
+
   //Boyacense
 
   function agregarJugoNaranjaB() {
@@ -1154,8 +1518,18 @@
     boton4.disabled = false;
     boton24.disabled = false;
     boton25.disabled = false;
-    boton27.disabled = false;
+    boton26.disabled = false;
+    boton33.disabled = false;
+    boton44.disabled = false;
+    boton42.disabled = false;
+    boton43.disabled = false;
+    boton45.disabled = false;
+    boton50.disabled = false;
+    boton51.disabled = false;
+    boton48.disabled = false;
+    boton49.disabled = false;
   }
+
   function disableDrinksTinto() {
     boton11.disabled = true;
     boton2.disabled = true;
@@ -1178,8 +1552,9 @@
     }
     mostrarVentanaEmergenteTinto();
   }
-  //Boyacense
 
+
+  //Boyacense
   function agregarTintoB() {
     if (boton33.style.backgroundColor === 'darkgreen') {
       boton33.style.backgroundColor = '#342315';
@@ -1193,6 +1568,61 @@
       boton31.disabled = true;
       boton32.disabled = true;
       boton34.disabled = true;
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Tinto.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -9);
+    } else {
+      mensajeInput.value += " \n -Tinto.";
+    }
+    mostrarVentanaEmergenteTinto();
+  }
+
+
+
+//Rolo
+  function agregarTintoR() {
+    if (boton50.style.backgroundColor === 'darkgreen') {
+      boton50.style.backgroundColor = '#342315';
+
+      boton48.disabled = false;
+      boton49.disabled = false;
+      boton51.disabled = false;
+    } else {
+      boton50.style.backgroundColor = 'darkgreen';
+
+      boton48.disabled = true;
+      boton49.disabled = true;
+      boton51.disabled = true;
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Tinto.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -9);
+    } else {
+      mensajeInput.value += " \n -Tinto.";
+    }
+    mostrarVentanaEmergenteTinto();
+  }
+
+
+
+
+
+
+  //Santafe
+  function agregarTintoS() {
+    if (boton44.style.backgroundColor === 'darkgreen') {
+      boton44.style.backgroundColor = '#342315';
+
+      boton42.disabled = false;
+      boton43.disabled = false;
+      boton45.disabled = false;
+    } else {
+      boton44.style.backgroundColor = 'darkgreen';
+
+      boton42.disabled = true;
+      boton43.disabled = true;
+      boton45.disabled = true;
     }
 
     if (mensajeInput.value.endsWith(" \n -Tinto.")) {
@@ -1238,6 +1668,9 @@
     boton11.disabled = false;
     boton3.disabled = false;
     boton4.disabled = false;
+    boton32.disabled = false;
+    boton43.disabled = false;
+    boton49.disabled = false;
   }
   // Andino
   function agregarCafe() {
@@ -1255,6 +1688,51 @@
       mensajeInput.value += " \n -Cafe.";
     }
   }
+  //Rolo
+
+  function agregarCafeR() {
+    if (boton49.style.backgroundColor === 'darkgreen') {
+      boton49.style.backgroundColor = '#342315';
+      boton48.disabled = false;
+      boton50.disabled = false;
+      boton51.disabled = false;
+    } else {
+      boton49.style.backgroundColor = 'darkgreen';
+      boton48.disabled = true;
+      boton50.disabled = true;
+      boton51.disabled = true;
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Cafe.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -8);
+    } else {
+      mensajeInput.value += " \n -Cafe.";
+    }
+  }
+
+  //Santafe
+
+  function agregarCafeS() {
+    if (boton43.style.backgroundColor === 'darkgreen') {
+      boton43.style.backgroundColor = '#342315';
+      boton42.disabled = false;
+      boton44.disabled = false;
+      boton45.disabled = false;
+    } else {
+      boton43.style.backgroundColor = 'darkgreen';
+      boton42.disabled = true;
+      boton44.disabled = true;
+      boton45.disabled = true;
+    }
+
+    if (mensajeInput.value.endsWith(" \n -Cafe.")) {
+      mensajeInput.value = mensajeInput.value.slice(0, -8);
+    } else {
+      mensajeInput.value += " \n -Cafe.";
+    }
+  }
+
+
   //Boyacense
 
   function agregarCafeB() {
@@ -1310,8 +1788,11 @@
 
     if (boton1.style.backgroundColor === 'darkgreen') {
       boton1.style.backgroundColor = '#342315';
+      boton13.disabled = false;
+
     } else {
       boton1.style.backgroundColor = 'darkgreen';
+      boton13.disabled = true;
     }
 
     if (mensajeInput.value.endsWith(" \n -Caldo de Costilla.")) {

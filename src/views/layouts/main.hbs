@@ -118,9 +118,6 @@
     });
 
 
-
-
-
   });
 
 
@@ -160,37 +157,79 @@
 
     }
     
-    
     enableBebidasAmericano()
     mostrarVentanaEmergenteAmericano();
     bebidasAmericano();
     
-
-    
-
-    
-    
-
-
-
 
   });
 
   const combo5 = document.getElementById('combo5');
 
   combo5.addEventListener('click', () => {
+    var msj= "CEREAL DE CABAÑA:\n-Kumis con granola y salsa de guayaba\n-Sandwich de queso";
+    var msj1= "\nCEREAL DE CABAÑA:\n-Kumis con granola y salsa de guayaba\n-Sandwich de queso";
+    
 
-    if ((description1.value.match(/[a-zA-Z]/))) {
 
-      description1.value += "\nCEREAL DE CABAÑA:"
-
-    } else {
-      description1.value = "CEREAL DE CABAÑA:"
-
+    if (mensajeInput.value.endsWith(msj)) {
+      
+      description1.value= description1.value.slice(0, -msj1.length);
+    }else if((description1.value.match(/[a-zA-Z]/))) {
+      description1.value+="\n"+msj;  
+    }else{
+      description1.value += msj;
     }
 
 
   });
+
+  const combo6 = document.getElementById('combo6');
+
+  combo6.addEventListener('click', () => {
+    if ((description1.value.match(/[a-zA-Z]/))) {
+      description1.value += "\nCOMBO SANTAFEREÑO:\n -Cazuela boyacense (changua)"
+
+    } else {
+      description1.value = "COMBO SANTAFEREÑO:\n -Cazuela boyacense (changua)"
+
+    }
+
+    mostrarVentanaEmergenteSantafe();
+    enableEverything();
+
+    const botones = document.querySelectorAll('.btn')
+    botones.forEach(boton => {
+      boton.style.backgroundColor = '#342315';
+    });
+
+
+
+  });
+
+  const combo7 = document.getElementById('combo7');
+
+  combo7.addEventListener('click', () => {
+    if ((description1.value.match(/[a-zA-Z]/))) {
+      description1.value += "\nCOMBO ROLO:\n -Tamal\n -Porción de queso"
+
+    } else {
+      description1.value = "COMBO SANTAFEREÑO:\n -Tamal\n -Porción de queso"
+
+    }
+
+    mostrarVentanaEmergenteRolo();
+    enableEverything();
+
+    const botones = document.querySelectorAll('.btn')
+    botones.forEach(boton => {
+      boton.style.backgroundColor = '#342315';
+    });
+
+
+
+  });
+
 
 
 

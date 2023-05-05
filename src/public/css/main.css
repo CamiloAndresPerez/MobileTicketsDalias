@@ -235,6 +235,30 @@ header{
   width: 850px;
 }
 
+#ventana-emergenteSantafereño{
+  position: fixed;
+  /* transform: translate(-50%, -50%);  */
+  transform: translate(50px, -2150px); 
+
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 850px;
+}
+
+#ventana-emergenteRolo{
+  position: fixed;
+  /* transform: translate(-50%, -50%);  */
+  transform: translate(50px, -2150px); 
+
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 850px;
+}
+
 #ventana-emergenteAmericano {
   position: fixed;
   /* transform: translate(-50%, -50%);  */
